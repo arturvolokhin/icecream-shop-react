@@ -1,0 +1,34 @@
+.bestsellers
+ 
+    &__item
+        position: relative
+        max-width: 270px
+        margin: 0 10px 40px 0
+       
+        &::before
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            width: 60px
+            height: 60px
+            background: url(/images/icons/bestseller.png)
+            z-index: 5
+
+    &__price
+        position: absolute
+        bottom: 75px
+        left: 0
+        font-size: 45px
+        font-weight: 500
+        
+        & span
+            font-size: 25px
+
+    &__description
+        margin: 20px 0 0 0
+        text-align: center
+        font-size: 16px
+        font-weight: 500
+        line-height: 25px
+        text-decoration: underline
