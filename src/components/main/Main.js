@@ -2,6 +2,7 @@ import React from "react";
 import Promo from "./Promo";
 import Offer from "./Offer";
 import Bestsellers from "./Bestsellers";
+import Description from "./Description";
 
 const Main = () => {
     return (
@@ -9,6 +10,7 @@ const Main = () => {
             <Promo />
             <Offer />
             <Bestsellers />
+            <Description />
         </section>
     );
 };
