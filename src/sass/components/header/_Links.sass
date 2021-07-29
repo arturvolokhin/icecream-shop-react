@@ -1,10 +1,10 @@
 .header        
     &__list
-        margin: 0 0 0 30px
+        margin: 0 0 0 20px
         display: flex
         justify-content: space-between
         list-style: none
-        width: 350px
+        width: 400px
         font-size: 16px
         font-weight: 500
 
@@ -13,11 +13,20 @@
         align-items: center
 
     &__item
+        padding: 10px 15px
+        border-radius: 20px
+        cursor: pointer
+        
+        &:hover
+            background: #fff
+        
+        &:hover .header__item-link
+            color: #000
+            border: none    
+
         &-link
             color: #fff
-            border-bottom: 1px solid #fff
-            &:hover
-                color: #ccc    
+            border-bottom: 1px solid #fff  
 
     &__info
         position: absolute
