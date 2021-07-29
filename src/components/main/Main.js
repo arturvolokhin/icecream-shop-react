@@ -1,12 +1,14 @@
-import React from 'react'
-import Promo from './Promo';
+import React from "react";
+import Promo from "./Promo";
+import Offer from "./Offer";
 
 const Main = () => {
-    return(
-        <>
-           <Promo text={'Крем-брюле и пломбир с малиновым джемом'}/>
-        </>
-    )
-}
+    return (
+        <section className="main">
+            <Promo />
+            <Offer />
+        </section>
+    );
+};
 
 export default Main;
