@@ -3,15 +3,15 @@ import "./fonts/roboto/stylesheet.css";
 import "./sass/main.sass";
 import Header from "./components/header/Header";
 import Main from "./components/main/Main";
+import Location from "./components/map/Location";
 
 const App = () => {
     return (
-        
-        <div className='wrapper'>
+        <div className="wrapper">
             <Header />
             <Main />
+            <Location />
         </div>
-        
     );
 };
 
