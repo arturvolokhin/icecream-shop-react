@@ -1,4 +1,5 @@
 import Logo from "../Logo";
+import { Link } from "react-router-dom";
 
 const Links = () => {
     return (
@@ -6,9 +7,9 @@ const Links = () => {
             <Logo />
             <ul className="header__list">
                 <li className="header__item">
-                    <a className="header__item-link" href="https://github.com/">
+                    <Link to="/catalog" className="header__item-link">
                         Каталог
-                    </a>
+                    </Link>
                 </li>
                 <li className="header__item">
                     <a className="header__item-link" href="https://github.com/">
