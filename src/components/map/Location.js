@@ -19,8 +19,6 @@ const Location = () => {
                         options={{
                             iconLayout: "default#image",
                             iconImageHref: icon,
-                            iconImageCaption:
-                                "Здесь вас ждёт вкусное мороженое",
                             iconImageSize: [200, 122],
                             iconImageOffset: [-30, -118],
                         }}

@@ -1,9 +1,9 @@
-import logo from "../../images/icons/logo.svg";
+import Logo from "../Logo";
 
 const Links = () => {
     return (
         <div className="header__links">
-            <img className="logo" src={logo} alt="logo" />
+            <Logo />
             <ul className="header__list">
                 <li className="header__item">
                     <a className="header__item-link" href="https://github.com/">
