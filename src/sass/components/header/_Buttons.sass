@@ -16,7 +16,7 @@
         background-position: top 55% right 9px
         cursor: pointer
         &:hover
-            background-color: #998686  
+            background-color: #998686
 
     &__login
         @include button()
@@ -28,6 +28,11 @@
         text-align: right
         box-shadow: none
         background: #b2b2b2
+
+        &:hover
+            background-color: #998686
+            color: #fff
+
         &::after
             content: ''
             display: block
@@ -37,7 +42,7 @@
             width: 20px
             height: 20px
             background: url(/images/icons/login.svg) no-repeat center
-        
+
     &__cart
         @include button()
         position: relative
@@ -48,6 +53,11 @@
         text-align: left
         background: #b2b2b2
         box-shadow: none
+
+        &:hover
+            background-color: #998686
+            color: #fff
+
         &::after
             content: ''
             display: block
@@ -57,5 +67,3 @@
             width: 20px
             height: 20px
             background: url(/images/icons/shopping-cart.svg) no-repeat center
-        
-        

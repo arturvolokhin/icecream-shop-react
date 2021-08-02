@@ -5,17 +5,19 @@ import Bestsellers from "./Bestsellers";
 import Description from "./Description";
 import BlogArticle from "./BlogArticle";
 import Subscription from "./Subscription";
+import Location from "../map/Location";
 
 const Main = () => {
     return (
-        <section className="main">
+        <main className="main">
             <Promo />
             <Offer />
             <Bestsellers />
             <Description />
             <BlogArticle />
             <Subscription />
-        </section>
+            <Location />
+        </main>
     );
 };
 
