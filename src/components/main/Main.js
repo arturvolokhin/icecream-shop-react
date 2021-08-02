@@ -3,6 +3,8 @@ import Promo from "./Promo";
 import Offer from "./Offer";
 import Bestsellers from "./Bestsellers";
 import Description from "./Description";
+import BlogArticle from "./BlogArticle";
+import Subscription from "./Subscription";
 
 const Main = () => {
     return (
@@ -11,6 +13,8 @@ const Main = () => {
             <Offer />
             <Bestsellers />
             <Description />
+            <BlogArticle />
+            <Subscription />
         </section>
     );
 };
