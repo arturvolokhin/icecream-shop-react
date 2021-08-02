@@ -2,12 +2,24 @@
     display: flex
     flex-flow: row wrap
     justify-content: space-between
-    max-width: 1000px
+    align-items: flex-end
+    max-width: 900px
     width: 100%
 
     & fieldset
-        margin: 0 0 40px 0
+        position: relative
+        margin: 40px 0 0 0
+        padding: 0 15px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        height: 37px
+        border-radius: 20px
+        background: rgba(255, 255, 255, 0.2)
 
+        &:nth-last-child(1)
+            margin: 0
+            
     &__title
         position: absolute
         top: -25px    
