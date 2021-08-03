@@ -4,10 +4,30 @@
         position: relative
         max-width: 270px
         margin: 0 10px 40px 0
+        cursor: pointer
+
+        &:hover
+            background: rgba(255, 255, 255, 0.3)
+            border-radius: 10px
+            margin: 0 10px 0 0
+            z-index: 10
+
+        &-button
+            margin: 0 auto
+            font-size: 15px 
+
+        &-hint
+            position: absolute
+            top: 30%
+            padding: 10px 5px
+            font-size: 20px
+            text-align: center
+            background: rgba(0, 0, 0, 0.5)
+                
 
     &__price
         position: absolute
-        bottom: 75px
+        top: 210px
         left: 0
         font-size: 45px
         font-weight: 500
