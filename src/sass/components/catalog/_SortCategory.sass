@@ -1,6 +1,15 @@
 .sort__category
     width: 195px
     cursor: pointer
+    transition: 0.1s linear
+
+    &:hover
+        border-radius: 20px 20px 0 0
+
+    &:hover .sort__category-list
+        display: block
+        opacity: 1
+        
 
     &::after
         content: ''
@@ -20,3 +29,36 @@
         background: transparent
         border: none
         cursor: pointer
+
+    &-list
+        position: absolute
+        top: 37px
+        left: 0
+        display: none
+        width: 100%
+        background: rgba(0, 0, 0, 0.7)
+        border-radius: 0 0 20px 20px
+        z-index: 10
+        opacity: 0
+        transition: 0.1s linear
+
+    &-item
+        position: relative
+        padding: 15px
+
+        &:nth-last-child(1)
+            border-radius: 0 0 20px 20px
+
+        &:hover
+            background: rgba(255, 255, 255, 0.2)
+
+        &:hover::after
+            content: ''
+            display: block
+            position: absolute
+            top: calc(50% - 5px)
+            right: 20px
+            width: 10px
+            height: 10px
+            border-radius: 50%
+            background: #fff    
