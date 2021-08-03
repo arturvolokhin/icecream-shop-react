@@ -1,4 +1,4 @@
-import Products from "./CatalogProducts";
+import Products from "./Products";
 import Sort from "./Sort";
 
 const Catalog = () => {
