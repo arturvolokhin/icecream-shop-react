@@ -1,9 +1,9 @@
-import { getLocalStorage } from "../../utils/localStorage";
 import ProductsItem from "./ProductsItem";
+import { useSelector } from 'react-redux';
 
 const Products = () => {
 
-    const data = getLocalStorage('products');
+    const data = useSelector(({preset}) => preset.productsData);
 
     return(
         <section className="products">

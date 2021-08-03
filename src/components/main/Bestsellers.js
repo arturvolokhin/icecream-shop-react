@@ -1,10 +1,9 @@
 import BestsellersItem from "./BestsellersItem";
-import { getLocalStorage } from '../../utils/localStorage';
+import { useSelector } from 'react-redux';
 
 const Bestsellers = () => {
 
-    const data = getLocalStorage('bestsellers');
-
+    const data = useSelector(({preset}) => preset.bestsellersData);
     return (
         <section className="bestsellers">
             {data.map((item, index) => {
