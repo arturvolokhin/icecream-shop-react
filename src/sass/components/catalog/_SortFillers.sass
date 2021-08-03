@@ -1,5 +1,30 @@
 .sort__fillers
     width: 730px
 
+    &-label
+        display: flex
+        align-items: center
+
     &-checkbox
-        margin: 0 10px 0 0  
+        opacity: 0
+
+        &:checked+.sort__fillers-checkbox-custom::after
+            content: ''
+            position: absolute
+            top: 5px
+            right: 2px
+            display: block
+            width: 10px
+            height: 4px
+            border: 3px solid #fff
+            border-top: none
+            border-right: none
+            transform: rotate(-45deg)
+
+        &-custom
+            position: relative
+            margin: 0 10px 0 0
+            width: 20px
+            height: 20px
+            border: 1px solid #fff
+            border-radius: 5px
