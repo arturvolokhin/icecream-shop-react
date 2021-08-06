@@ -16,6 +16,7 @@ import rootReducer from './reducers';
 const persistConfig = {
     key: "root",
     storage,
+    blacklist: ['preset'],
 };
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
@@ -37,4 +38,6 @@ export const store = configureStore({
         }),
 });
 
+
 export let persistor = persistStore(store);
+// persistor.purge();

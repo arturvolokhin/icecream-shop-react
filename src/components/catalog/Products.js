@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 
 const Products = () => {
 
-    const data = useSelector(({preset}) => preset.productsData);
+    const data = useSelector(({preset}) => preset.renderProductsData);
 
     return(
         <section className="products">

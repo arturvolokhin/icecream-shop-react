@@ -1,18 +1,32 @@
-import React, { useState } from "react";
-
-const SortCategory = () => {
-
-    const [value, setValue] = useState('Выберите категорию')
-
+const SortCategory = ({ category, setCategory }) => {
     return (
         <>
             <fieldset className="sort__category">
                 <legend className="sort__title">Сортировка:</legend>
-                <input className="sort__category-value" value={value} disabled/>
+                <input
+                    className="sort__category-value"
+                    value={category}
+                    disabled
+                />
                 <ul className="sort__category-list">
-                    <li className="sort__category-item" onClick={() => setValue('Популярные')}>Популярные</li>
-                    <li className="sort__category-item" onClick={() => setValue('Дешёвые')}>Дешёвые</li>
-                    <li className="sort__category-item" onClick={() => setValue('Дорогие')}>Дорогие</li>
+                    <li
+                        className="sort__category-item"
+                        onClick={() => setCategory("Популярные")}
+                    >
+                        Популярные
+                    </li>
+                    <li
+                        className="sort__category-item"
+                        onClick={() => setCategory("Дешёвые")}
+                    >
+                        Дешёвые
+                    </li>
+                    <li
+                        className="sort__category-item"
+                        onClick={() => setCategory("Дорогие")}
+                    >
+                        Дорогие
+                    </li>
                 </ul>
             </fieldset>
         </>

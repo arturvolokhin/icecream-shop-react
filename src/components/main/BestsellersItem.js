@@ -7,7 +7,7 @@ const BestsellersItem = ({ price, image, description }) => {
                 alt="bestseller item"
             />
             <p className="bestsellers__price">
-                {price} + &#8381;<span>/кг</span>
+                {price} &#8381;<span>/кг</span>
             </p>
             <p className="bestsellers__description">{description}</p>
         </div>
