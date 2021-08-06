@@ -15,7 +15,6 @@ import menthol from "../images/products/menthol.png";
 import mintSyrup from "../images/products/mint-syrup.png";
 import vanillaChocolate from "../images/products/vanilla-chocolate.png";
 
-
 const productsData = [
     {
         price: 310,
@@ -167,46 +166,56 @@ export const presetSlice = createSlice({
         filterProducts: (state, { payload }) => {
             const { category, cost, fat, fillers } = payload;
 
-            let filterCost = state.productsData.filter(product => {
-                return product.price >= cost[0] && product.price <= cost[1]
-            }); 
-            
-            if (category === 'Популярные') {
-                filterCost.sort((a, b) => b.popularity-a.popularity)
-            }
+            let primaryFiltering = state.productsData.filter((product) => {
+                return product.price >= cost[0] && product.price <= cost[1];
+            });
 
-            if (category === 'Дешёвые') {
-                filterCost.sort((a, b) => a.price-b.price)
-            }
-
-            if (category === 'Дорогие') {
-                filterCost.sort((a, b) => b.price-a.price)
+            switch (category) {
+                case "Популярные":
+                    primaryFiltering.sort(
+                        (a, b) => b.popularity - a.popularity
+                    );
+                    break;
+                case "Дешёвые":
+                    primaryFiltering.sort((a, b) => a.price - b.price);
+                    break;
+                case "дорогие":
+                    primaryFiltering.sort((a, b) => b.price - a.price);
+                    break;
+                default:
+                    break;
             }
 
             if (fat !== null) {
-                fat === 100 ? filterCost = filterCost.filter(product => product.fat > 30) :
-                filterCost = filterCost.filter(product => product.fat <= fat);
+                fat === 100
+                    ? (primaryFiltering = primaryFiltering.filter(
+                          (product) => product.fat > 30
+                      ))
+                    : (primaryFiltering = primaryFiltering.filter(
+                          (product) => product.fat <= fat
+                      ));
             }
 
             for (let i = 0; i < fillers.length; i++) {
                 const array = [];
-                for (let j = 0; j < filterCost.length; j++) {
-                    if (!Array.isArray(filterCost[j].fillers)) {
-                        fillers.includes(filterCost[j].fillers) &&
-                        array.push(filterCost[j]);
+                for (let j = 0; j < primaryFiltering.length; j++) {
+                    if (!Array.isArray(primaryFiltering[j].fillers)) {
+                        fillers.includes(primaryFiltering[j].fillers) &&
+                            array.push(primaryFiltering[j]);
                     } else {
-                        filterCost[j].fillers.forEach(filler => {
-                            const value = fillers.find(item => filler === item);
-                            value && array.push(filterCost[j]);
-                        })
+                        primaryFiltering[j].fillers.forEach((filler) => {
+                            const value = fillers.find(
+                                (item) => filler === item
+                            );
+                            value && array.push(primaryFiltering[j]);
+                        });
                     }
                 }
-                const unique = (arr) => Array.from(new Set(arr))
-                filterCost = unique(array);
+                const unique = (arr) => Array.from(new Set(arr));
+                primaryFiltering = unique(array);
             }
 
-            state.renderProductsData = filterCost;
-
+            state.renderProductsData = primaryFiltering;
         },
     },
 });
