@@ -196,23 +196,23 @@ export const productsSlice = createSlice({
                       ));
             }
 
-            for (let i = 0; i < fillers.length; i++) {
-                const array = [];
-                for (let j = 0; j < primaryFiltering.length; j++) {
-                    if (!Array.isArray(primaryFiltering[j].fillers)) {
-                        fillers.includes(primaryFiltering[j].fillers) &&
-                            array.push(primaryFiltering[j]);
+    
+            let finalFiltering = [];
+
+            fillers.forEach(filler => {
+                primaryFiltering.forEach(item => {
+                    if (!Array.isArray(item.fillers)) {
+                        fillers.includes(item.fillers) &&
+                        finalFiltering.push(item);
                     } else {
-                        primaryFiltering[j].fillers.forEach((filler) => {
-                            const value = fillers.find(
-                                (item) => filler === item
-                            );
-                            value && array.push(primaryFiltering[j]);
-                        });
+                        item.fillers.forEach(filler => {
+                            const value = fillers.find(item => filler === item);
+                            value && finalFiltering.push(item);
+                        })
                     }
-                }
-                primaryFiltering = Array.from(new Set(array));
-            }
+                })
+                primaryFiltering = Array.from(new Set(finalFiltering));
+            })
             state.renderProductsData = primaryFiltering;
         },
     },
