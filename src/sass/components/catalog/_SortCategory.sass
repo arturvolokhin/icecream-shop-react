@@ -6,9 +6,9 @@
     &:hover
         border-radius: 20px 20px 0 0
 
-    &:hover .sort__category-list
-        display: block
+    &:hover &-list
         opacity: 1
+        z-index: 10
         
 
     &::after
@@ -34,11 +34,10 @@
         position: absolute
         top: 37px
         left: 0
-        display: none
         width: 100%
         background: rgba(0, 0, 0, 0.7)
         border-radius: 0 0 20px 20px
-        z-index: 10
+        z-index: -1
         opacity: 0
         transition: 0.1s linear
 
