@@ -1,8 +1,9 @@
-import { useDispatch } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { toggleCart } from "../../redux/cartSlice";
 
 const Buttons = () => {
     const dispatch = useDispatch();
+    const cartValue = useSelector(({cart}) => cart.cartProducts.length);
 
     const handleClick = () => {
         dispatch(toggleCart(true));
@@ -13,7 +14,7 @@ const Buttons = () => {
             <input className="header__search" />
             <button className="header__login">Вход</button>
             <button className="header__cart" onClick={handleClick}>
-                Пусто
+                {cartValue ? cartValue : 'Пусто'}
             </button>
         </div>
     );

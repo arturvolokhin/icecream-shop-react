@@ -6,17 +6,29 @@ import CartItem from "./CartItem";
 
 const Cart = () => {
     const dispatch = useDispatch();
-    let active = useSelector(({cart}) => cart.isActive);
+    const active = useSelector(({ cart }) => cart.isActive);
+    const cartProductsData = useSelector(({ cart }) => cart.cartProducts);
 
     return (
-        active &&
-        <div className="cart">
-            <CartHeader active={active} dispatch={dispatch} />
-            <CartItem />
-            <CartItem />
-            <CartItem />
-            <CartFooter />
-        </div>
+        active && (
+            <div className="cart">
+                <CartHeader active={active} dispatch={dispatch} />
+                {cartProductsData.map((product, index) => {
+                    return (
+                        <CartItem
+                            key={index}
+                            image={product.image}
+                            description={product.description}
+                            price={product.price}
+                            quantity={product.quantity}
+                            name={product.name}
+                            dispatch={dispatch}
+                        />
+                    );
+                })}
+                <CartFooter />
+            </div>
+        )
     );
 };
 
