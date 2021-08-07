@@ -9,7 +9,6 @@ const Cart = () => {
             <CartItem />
             <CartItem />
             <CartItem />
-            <CartItem />
             <CartFooter />
         </div>
     );
