@@ -179,7 +179,7 @@ export const presetSlice = createSlice({
                 case "Дешёвые":
                     primaryFiltering.sort((a, b) => a.price - b.price);
                     break;
-                case "дорогие":
+                case "Дорогие":
                     primaryFiltering.sort((a, b) => b.price - a.price);
                     break;
                 default:
@@ -211,10 +211,8 @@ export const presetSlice = createSlice({
                         });
                     }
                 }
-                const unique = (arr) => Array.from(new Set(arr));
-                primaryFiltering = unique(array);
+                primaryFiltering = Array.from(new Set(array));
             }
-
             state.renderProductsData = primaryFiltering;
         },
     },
