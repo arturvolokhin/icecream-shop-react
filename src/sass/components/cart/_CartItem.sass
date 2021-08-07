@@ -1,0 +1,78 @@
+.cart
+    &__item
+        margin: 0 15px
+        display: flex
+        min-height: 90px
+        flex-flow: row nowrap
+        justify-content: space-between
+        align-items: center
+        border-bottom: 1px solid #ccc
+
+        &-image
+            width: 65px
+            height: 65px
+
+        &-text
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            max-width: 340px
+            min-height: 75px
+            height: 100%
+
+        &-name
+            font-size: 15px
+
+        &-weight
+            display: flex
+            flex-flow: column nowrap
+            align-items: center
+            justify-content: space-between
+            min-height: 74px
+
+        &-button
+            position: relative
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 25px
+            height: 25px
+            border-radius: 50%
+            border: none
+            background: linear-gradient(to top, #e74a35 0%, #f26843 100%)
+            font-size: 20px
+            
+            &:hover
+                background: #fff
+                color: #000
+
+            &--increment::after
+                content: ''
+                position: absolute
+                top: calc(50% - 0.5px)
+                left: calc(50% - 5px)
+                width: 10px
+                height: 1px
+                background: #000
+                border: none
+
+            &--increment::before
+                content: ''
+                position: absolute
+                top: calc(50% - 0.5px)
+                left: calc(50% - 5px)
+                width: 10px
+                height: 1px
+                background: #000
+                border: none
+                transform: rotate(90deg)
+
+            &--decrement::after
+                content: ''
+                position: absolute
+                top: calc(50% - 0.5px)
+                left: calc(50% - 5px)
+                width: 10px
+                height: 1px
+                background: #000
+                border: none

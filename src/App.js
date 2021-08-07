@@ -6,6 +6,7 @@ import Header from "./components/header/Header";
 import Main from "./components/main/Main";
 import Footer from "./components/footer/Footer";
 import Catalog from "./components/catalog/Catalog";
+import Cart from "./components/cart/Cart";
 
 const App = () => {
     return (
@@ -17,8 +18,9 @@ const App = () => {
                 </Route>
                 <Route exact path="/catalog">
                     <Catalog />
-                </Route>    
+                </Route>   
             </Switch>
+            <Cart /> 
             <Footer />
         </div>
     );
