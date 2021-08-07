@@ -151,8 +151,8 @@ const bestsellersData = [
     },
 ];
 
-export const presetSlice = createSlice({
-    name: "preset",
+export const productsSlice = createSlice({
+    name: "products",
 
     initialState: {
         productsData: productsData,
@@ -218,5 +218,5 @@ export const presetSlice = createSlice({
     },
 });
 
-export const { filterProducts } = presetSlice.actions;
-export default presetSlice.reducer;
+export const { filterProducts } = productsSlice.actions;
+export default productsSlice.reducer;

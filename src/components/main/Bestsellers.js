@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 
 const Bestsellers = () => {
 
-    const data = useSelector(({preset}) => preset.bestsellersData);
+    const data = useSelector(({products}) => products.bestsellersData);
     return (
         <section className="bestsellers">
             {data.map((item, index) => {

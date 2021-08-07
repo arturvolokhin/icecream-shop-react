@@ -1,8 +1,6 @@
 import { combineReducers } from "redux";
-import blog from "./blogSlice";
-import preset from './presetSlice';
+import products from './productsSlice';
 
 export default combineReducers({
-    blog,
-    preset
+    products
 });

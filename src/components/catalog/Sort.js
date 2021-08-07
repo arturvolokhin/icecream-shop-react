@@ -5,7 +5,7 @@ import SortCost from "./SortCost";
 import SortFat from "./SortFat";
 import SortFillers from "./SortFillers";
 import { useDispatch } from "react-redux";
-import { filterProducts } from "../../redux/presetSlice";
+import { filterProducts } from "../../redux/productsSlice";
 
 const Sort = () => {
     const [category, setCategory] = useState("Выберите категорию");
