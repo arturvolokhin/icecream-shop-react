@@ -2,16 +2,23 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { addProductToCart } from "../../redux/cartSlice";
 
-const ProductsItem = ({ price, image, description, name }) => {
-
+const ProductsItem = ({ price, image, description, name, bestseller }) => {
     const dispatch = useDispatch();
 
-    const handleClick = ({currentTarget}) => {
-        dispatch(addProductToCart(currentTarget.id))
-    }
+    const handleClick = ({ currentTarget }) => {
+        dispatch(addProductToCart(currentTarget.id));
+    };
 
     return (
-        <div className="products__item" id={name} onClick={handleClick}>
+        <div
+            className={
+                bestseller
+                    ? "products__item bestsellers__item"
+                    : "products__item"
+            }
+            id={name}
+            onClick={handleClick}
+        >
             <img className="products__image" src={image} alt="products item" />
             <p className="products__price">
                 {price} &#8381;<span>/кг</span>

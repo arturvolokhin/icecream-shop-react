@@ -13,11 +13,11 @@ import menthol from "../images/products/menthol.png";
 import mintSyrup from "../images/products/mint-syrup.png";
 import vanillaChocolate from "../images/products/vanilla-chocolate.png";
 
-export const productsData = [
+const productsData = [
     {
         price: 310,
         image: orange,
-        name: 'orange',
+        name: "orange",
         description: "Сливочное с апельсиновым джемом и цитрусовой стружкой",
         popularity: 1,
         fat: 10,
@@ -28,7 +28,7 @@ export const productsData = [
     {
         price: 380,
         image: coffee,
-        name: 'coffee',
+        name: "coffee",
         description: "Сливочно-кофейное с кусочками шоколада",
         popularity: 11,
         fat: 100,
@@ -39,7 +39,7 @@ export const productsData = [
     {
         price: 355,
         image: strawberry,
-        name: 'strawberry',
+        name: "strawberry",
         description: "Сливочно-клубничное с присыпкой из белого шоколада",
         popularity: 2,
         fat: 10,
@@ -50,7 +50,7 @@ export const productsData = [
     {
         price: 415,
         image: cremebrulle,
-        name: 'cremebrulle',
+        name: "cremebrulle",
         description: "Сливочное крем-брюле с карамельной подливкой",
         popularity: 9,
         fat: 100,
@@ -61,7 +61,7 @@ export const productsData = [
     {
         price: 325,
         image: lingonberryJam,
-        name: 'lingonberryJam',
+        name: "lingonberryJam",
         description: "Сливочное с брусничным джемом",
         popularity: 6,
         fat: 10,
@@ -72,7 +72,7 @@ export const productsData = [
     {
         price: 410,
         image: blueberry,
-        name: 'blueberry',
+        name: "blueberry",
         description: "Сливочно-черничное с цельными ягодами черники",
         popularity: 8,
         fat: 10,
@@ -83,7 +83,7 @@ export const productsData = [
     {
         price: 375,
         image: lemon,
-        name: 'lemon',
+        name: "lemon",
         description: "Сливочно-лимонное с карамельной присыпкой",
         popularity: 3,
         fat: 0,
@@ -94,7 +94,7 @@ export const productsData = [
     {
         price: 320,
         image: creamyChocolate,
-        name: 'creamyChocolate',
+        name: "creamyChocolate",
         description: "Сливочное с шоколадной стружкой",
         popularity: 15,
         fat: 100,
@@ -105,7 +105,7 @@ export const productsData = [
     {
         price: 440,
         image: vanillaChocolate,
-        name: 'vanillaChocolate',
+        name: "vanillaChocolate",
         description: "Сливочно-ванильное с кусочками шоколада",
         popularity: 14,
         fat: 100,
@@ -116,7 +116,7 @@ export const productsData = [
     {
         price: 435,
         image: menthol,
-        name: 'menthol',
+        name: "menthol",
         description: "Сливочноe с ментоловым сиропом",
         popularity: 12,
         fat: 30,
@@ -127,18 +127,18 @@ export const productsData = [
     {
         price: 355,
         image: darkChocolate,
-        name: 'darkChocolate',
+        name: "darkChocolate",
         description: "Сливочное с кусочками черного шоколада",
         popularity: 2,
         fat: 30,
         fillers: "chocolate",
         quantity: 1,
     },
-    
+
     {
         price: 420,
         image: mintSyrup,
-        name: 'mintSyrup',
+        name: "mintSyrup",
         description: "Сливочное с мятным сиропом",
         popularity: 8,
         fat: 0,
@@ -147,31 +147,6 @@ export const productsData = [
     },
 ];
 
-export const bestsellersData = [
-    {
-        price: 310,
-        image: orange,
-        name: 'orange',
-        description: "Сливочное с апельсиновым джемом и цитрусовой стружкой",
-    },
+const bestsellersData = ["orange", "coffee", "strawberry", "cremebrulle"];
 
-    {
-        price: 380,
-        image: coffee,
-        name: 'coffee',
-        description: "Сливочно-кофейное с кусочками шоколада",
-    },
-
-    {
-        price: 355,
-        image: strawberry,
-        name: 'strawberry',
-        description: "Сливочно-клубничное с присыпкой из белого шоколада",
-    },
-
-    {
-        price: 415,
-        image: 'cremebrulle',
-        description: "Сливочное крем-брюле с карамельной подливкой",
-    },
-];
+export { productsData, bestsellersData };

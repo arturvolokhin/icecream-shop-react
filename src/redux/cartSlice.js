@@ -19,7 +19,7 @@ export const cartSlice = createSlice({
             const index = cartProducts.findIndex(
                 (item) => item.name === product.name
             );
-            index != -1
+            index !== -1
                 ? cartProducts[index].quantity++
                 : cartProducts.push(product);
         },

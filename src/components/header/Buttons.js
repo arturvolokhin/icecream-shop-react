@@ -23,7 +23,7 @@ const Buttons = () => {
             <input className="header__search" />
             <button className="header__login">Вход</button>
             <button className="header__cart" onClick={handleClick}>
-                {cost != "0р" ? cost : "Пусто"}
+                {cost !== "0р" ? cost : "Пусто"}
             </button>
         </div>
     );

@@ -1,0 +1,27 @@
+.notification
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    width: 400px
+    height: 200px
+    background: #fff
+    border-radius: 30px
+
+    &__wrap
+        position: fixed
+        top: calc(50% - 100px)
+        left: calc(50% - 200px)
+        padding: 5px
+        background: url(/images/background/subscription.png) no-repeat center/cover
+        border-radius: 30px
+        z-index: 15
+
+    &__title
+        font-size: 25px
+        font-weight: 500
+        margin: 0 0 40px
+
+    &__button
+        &:hover
+            background: #ccc    

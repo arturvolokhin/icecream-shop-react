@@ -6,20 +6,16 @@ const Links = () => {
         <div className="header__links">
             <Logo />
             <ul className="header__list">
+                <Link to="/catalog" className="header__item-link">
+                    <li className="header__item">
+                        <p className="header__item-text">Каталог</p>
+                    </li>
+                </Link>
                 <li className="header__item">
-                    <Link to="/catalog" className="header__item-link">
-                        Каталог
-                    </Link>
+                    <p className="header__item-text">Доставка и оплата</p>
                 </li>
                 <li className="header__item">
-                    <a className="header__item-link" href="https://github.com/">
-                        Доставка и оплата
-                    </a>
-                </li>
-                <li className="header__item">
-                    <a className="header__item-link" href="https://github.com/">
-                        О компании
-                    </a>
+                    <p className="header__item-text">О компании</p>
                 </li>
             </ul>
         </div>

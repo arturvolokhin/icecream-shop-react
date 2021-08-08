@@ -16,7 +16,7 @@ import rootReducer from './reducers';
 const persistConfig = {
     key: "root",
     storage,
-    blacklist: ['products', 'cart'],
+    blacklist: ['products', 'cart', 'notification'],
 };
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
