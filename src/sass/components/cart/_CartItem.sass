@@ -3,56 +3,79 @@
     &__content
         display: flex
         justify-content: flex-start
+        align-items: center
 
     &__item
-        margin: 0 15px
+        margin: 15px 40px
         padding: 15px 0
         display: flex
         min-height: 90px
         flex-flow: row nowrap
         justify-content: space-between
         align-items: center
-        border-bottom: 1px solid #ccc
 
         &-image
-            width: 65px
-            height: 65px
+            width: 90px
+            height: 90px
 
         &-text
             margin: 0 0 0 15px
             display: flex
             flex-direction: column
             justify-content: space-between
-            max-width: 340px
+            max-width: 500px
             min-height: 75px
             height: 100%
 
         &-name
-            font-size: 15px
+            font-size: 20px
+            font-weight: 600
             line-height: 20px
 
         &-weight
+            position: relative
             display: flex
-            flex-flow: column nowrap
             align-items: center
             justify-content: space-between
-            min-height: 80px
+            min-width: 170px
+            padding: 0px 60px 0 0
+
+        &-value
+            font-size: 20px
+
+        &-remove
+            position: absolute
+            right: 0
+            display: block
+            width: 35px
+            height: 40px
+            background: url(/images/icons/cart/remove-item.png) no-repeat center / contain
+            cursor: pointer
+
+        &-cost
+            font-size: 20px
+            color: #ccc
 
         &-button
             position: relative
             display: flex
             justify-content: center
             align-items: center
-            width: 25px
-            height: 25px
-            border-radius: 50%
+            width: 35px
+            height: 50px
+            border-radius: 10px
             border: none
-            background: linear-gradient(to top, #e74a35 0%, #f26843 100%)
+            background: rgba(0, 0, 0, 0.1)
             font-size: 20px
 
             &:hover
+                background: linear-gradient(to top, #e74a35 0%, #f26843 100%)
+
+            &:hover::after
                 background: #fff
-                color: #000
+
+            &:hover::before
+                background: #fff
 
             &--increment::after
                 content: ''

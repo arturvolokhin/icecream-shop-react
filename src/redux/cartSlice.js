@@ -26,7 +26,8 @@ export const cartSlice = createSlice({
 
         increaseProductQuantity: ({ cartProducts }, { payload }) => {
             cartProducts.forEach((product) => {
-                product.name === payload && product.quantity++;
+                product.name === payload && product.quantity < 99 &&
+                product.quantity++;
             });
         },
 
@@ -36,6 +37,11 @@ export const cartSlice = createSlice({
                 product.quantity--;
             });
         },
+
+        removeProduct: ({cartProducts}, {payload}) => {
+            const index = cartProducts.findIndex(product => product.name === payload);
+            cartProducts.splice(index, 1);
+        }
     },
 });
 
@@ -44,5 +50,6 @@ export const {
     addProductToCart,
     increaseProductQuantity,
     decreaseProductQuantity,
+    removeProduct,
 } = cartSlice.actions;
 export default cartSlice.reducer;

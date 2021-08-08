@@ -3,16 +3,27 @@
     &__footer
         position: sticky
         bottom: 0
-        padding: 15px 40px
+        padding: 30px 40px
         display: flex
         justify-content: space-between
         align-items: center
         background: #fff
         color: #000
 
+        &::after
+            content: ''
+            position: absolute
+            top: 0
+            left: 45%
+            margin-left: -40%
+            display: block
+            width: 90%
+            height: 2px
+            background: #000
+
         &-text
             font-size: 20px
             font-weight: 700
 
         &-cost
-            color: red     
+            color: red
