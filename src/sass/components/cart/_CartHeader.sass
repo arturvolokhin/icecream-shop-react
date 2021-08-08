@@ -10,36 +10,55 @@
         color: #000
         z-index: 10
 
+        &-actions
+            display: flex
+            align-items: center
+            width: 185px
+            justify-content: space-between
+
         &-title
             font-size: 30px
             font-weight: 700
 
-    &__close
-        position: relative
-        width: 30px
-        height: 30px
-        cursor: pointer
+        &-remove
+            font-size: 17px
+            color: red
+            text-decoration: underline
+            font-weight: 500
+            border: none
+            background: none
+            cursor: pointer
 
-        &::before
-            content: ''
-            position: absolute
-            top: 15px
-            right: 0
-            display: block
-            width: 30px
-            height: 3px
-            background: #ccc
-            transform: rotate(-45deg)
-            
+            &:hover
+                color: #ccc
+                text-decoration: none
 
-        &::after
-            content: ''
-            position: absolute
-            top: 15px
-            right: 0
-            display: block
+        &-close
+            position: relative
             width: 30px
-            height: 3px
-            background: #ccc
-            transform: rotate(45deg)
-            
+            height: 30px
+            cursor: pointer
+
+            &::before
+                content: ''
+                position: absolute
+                top: 15px
+                right: 0
+                display: block
+                width: 30px
+                height: 3px
+                background: #ccc
+                transform: rotate(-45deg)
+
+            &::after
+                content: ''
+                position: absolute
+                top: 15px
+                right: 0
+                display: block
+                width: 30px
+                height: 3px
+                background: #ccc
+                transform: rotate(45deg)
+
+        &-remove

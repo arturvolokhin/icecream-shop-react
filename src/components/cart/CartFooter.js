@@ -16,13 +16,6 @@ const CartFooter = () => {
     }, [cartProducts]);
 
     const handleClick = (e) => {
-        console.log(e.target);
-        console.log(userForm);
-        setUserForm(!userForm);
-    };
-
-    const handleSubmit = () => {
-        console.log("Отправлено");
         setUserForm(!userForm);
     };
 

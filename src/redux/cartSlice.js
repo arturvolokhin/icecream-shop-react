@@ -26,22 +26,30 @@ export const cartSlice = createSlice({
 
         increaseProductQuantity: ({ cartProducts }, { payload }) => {
             cartProducts.forEach((product) => {
-                product.name === payload && product.quantity < 99 &&
-                product.quantity++;
+                product.name === payload &&
+                    product.quantity < 99 &&
+                    product.quantity++;
             });
         },
 
         decreaseProductQuantity: ({ cartProducts }, { payload }) => {
             cartProducts.forEach((product) => {
-                product.name === payload && product.quantity > 1 && 
-                product.quantity--;
+                product.name === payload &&
+                    product.quantity > 1 &&
+                    product.quantity--;
             });
         },
 
-        removeProduct: ({cartProducts}, {payload}) => {
-            const index = cartProducts.findIndex(product => product.name === payload);
+        removeProduct: ({ cartProducts }, { payload }) => {
+            const index = cartProducts.findIndex(
+                (product) => product.name === payload
+            );
             cartProducts.splice(index, 1);
-        }
+        },
+
+        removeAllProducts: ({ cartProducts }) => {
+            cartProducts.length = 0;
+        },
     },
 });
 
@@ -51,5 +59,6 @@ export const {
     increaseProductQuantity,
     decreaseProductQuantity,
     removeProduct,
+    removeAllProducts,
 } = cartSlice.actions;
 export default cartSlice.reducer;

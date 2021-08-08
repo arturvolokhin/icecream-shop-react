@@ -1,18 +1,17 @@
 import Button from "../Button";
-import { useDispatch } from 'react-redux';
+import { useDispatch } from "react-redux";
 import { toggleNotification } from "../../redux/notificationSlice";
-import { toggleCart } from '../../redux/cartSlice';
+import { toggleCart, removeAllProducts } from "../../redux/cartSlice";
 
 const FormOrdering = () => {
-
     const dispatch = useDispatch();
-    
 
     const handleClick = (e) => {
         e.preventDefault();
         dispatch(toggleCart(false));
         dispatch(toggleNotification(true));
-    }
+        dispatch(removeAllProducts());
+    };
 
     return (
         <form className="cart__form">
