@@ -1,4 +1,5 @@
 import { toggleCart, removeAllProducts } from "../../redux/cartSlice";
+import Close from "../Close";
 
 const CartHeader = ({ dispatch }) => {
     return (
@@ -11,10 +12,7 @@ const CartHeader = ({ dispatch }) => {
                 >
                     Очистить корзину
                 </button>
-                <div
-                    className="cart__header-close"
-                    onClick={() => dispatch(toggleCart(false))}
-                ></div>
+                <Close handleClick={() => dispatch(toggleCart(false))}/>
             </div>
         </header>
     );

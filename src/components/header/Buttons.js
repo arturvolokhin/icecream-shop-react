@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { toggleCart } from "../../redux/cartSlice";
 import { startSearch, clearFoundProducts } from "../../redux/searchSlice";
 import Search from "./Search";
+import { Link } from "react-router-dom";
 
 const Buttons = () => {
     const dispatch = useDispatch();
@@ -54,7 +55,7 @@ const Buttons = () => {
             />
             {search && <Search />}
 
-            <button className="header__login">Вход</button>
+            <Link to="/auth"><button className="header__login">Вход</button></Link>
             <button className="header__cart" onClick={handleToggleCart}>
                 {cost !== "0р" ? cost : "Пусто"}
             </button>
