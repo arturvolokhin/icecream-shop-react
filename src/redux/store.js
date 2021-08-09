@@ -11,12 +11,12 @@ import {
 } from "redux-persist";
 
 import storage from "redux-persist/lib/storage";
-import rootReducer from './reducers';
+import rootReducer from "./reducers";
 
 const persistConfig = {
     key: "root",
     storage,
-    blacklist: ['products', 'cart', 'notification', 'search'],
+    blacklist: ["products", "cart", "notification", "search"],
 };
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
@@ -38,6 +38,4 @@ export const store = configureStore({
         }),
 });
 
-
 export let persistor = persistStore(store);
-// persistor.purge();

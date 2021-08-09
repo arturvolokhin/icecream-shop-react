@@ -5,7 +5,7 @@ const SortFat = ({ setFat }) => {
                 <legend className="sort__title">Жирность:</legend>
                 <label className="sort__fat-label">
                     <input
-                        onChange={({target}) => setFat(+target.value)}
+                        onChange={({ target }) => setFat(+target.value)}
                         className="sort__fat-radio"
                         type="radio"
                         name="fat"
@@ -16,7 +16,7 @@ const SortFat = ({ setFat }) => {
                 </label>
                 <label className="sort__fat-label">
                     <input
-                        onChange={({target}) => setFat(+target.value)}
+                        onChange={({ target }) => setFat(+target.value)}
                         className="sort__fat-radio"
                         type="radio"
                         name="fat"
@@ -27,7 +27,7 @@ const SortFat = ({ setFat }) => {
                 </label>
                 <label className="sort__fat-label">
                     <input
-                        onChange={({target}) => setFat(+target.value)}
+                        onChange={({ target }) => setFat(+target.value)}
                         className="sort__fat-radio"
                         type="radio"
                         name="fat"
@@ -38,7 +38,7 @@ const SortFat = ({ setFat }) => {
                 </label>
                 <label className="sort__fat-label">
                     <input
-                        onChange={({target}) => setFat(+target.value)}
+                        onChange={({ target }) => setFat(+target.value)}
                         className="sort__fat-radio"
                         type="radio"
                         name="fat"

@@ -14,8 +14,6 @@ const Sort = () => {
     const [fillers, setFillers] = useState([]);
     const dispatch = useDispatch();
 
-
-
     const handleClick = (e) => {
         e.preventDefault();
         const filterValues = {
@@ -23,10 +21,10 @@ const Sort = () => {
             cost: cost,
             fat: fat,
             fillers: fillers,
-        }
+        };
 
         dispatch(filterProducts(filterValues));
-    }
+    };
 
     return (
         <form className="sort">

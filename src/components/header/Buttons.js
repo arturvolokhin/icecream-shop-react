@@ -55,7 +55,9 @@ const Buttons = () => {
             />
             {search && <Search />}
 
-            <Link to="/auth"><button className="header__login">Вход</button></Link>
+            <Link to="/auth">
+                <button className="header__login">Вход</button>
+            </Link>
             <button className="header__cart" onClick={handleToggleCart}>
                 {cost !== "0р" ? cost : "Пусто"}
             </button>

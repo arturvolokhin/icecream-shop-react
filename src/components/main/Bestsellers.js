@@ -19,7 +19,7 @@ const Bestsellers = () => {
                             description={item.description}
                         />
                     );
-                } else return null
+                } else return null;
             })}
         </section>
     );

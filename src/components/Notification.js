@@ -3,7 +3,6 @@ import { useDispatch } from "react-redux";
 import { toggleNotification } from "../redux/notificationSlice";
 
 const Notification = () => {
-
     const dispatch = useDispatch();
 
     return (

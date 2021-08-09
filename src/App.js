@@ -13,7 +13,9 @@ import Registration from "./components/authorization/Registration";
 import { useSelector } from "react-redux";
 
 const App = () => {
-    const notification = useSelector(({ notification }) => notification.isActive);
+    const notification = useSelector(
+        ({ notification }) => notification.isActive
+    );
 
     return (
         <div className="wrapper">

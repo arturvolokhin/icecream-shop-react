@@ -44,23 +44,24 @@ export const productsSlice = createSlice({
                       ));
             }
 
-    
             let finalFiltering = [];
 
-            fillers.forEach(filler => {
-                primaryFiltering.forEach(item => {
+            fillers.forEach((filler) => {
+                primaryFiltering.forEach((item) => {
                     if (!Array.isArray(item.fillers)) {
                         fillers.includes(item.fillers) &&
-                        finalFiltering.push(item);
+                            finalFiltering.push(item);
                     } else {
-                        item.fillers.forEach(filler => {
-                            const value = fillers.find(item => filler === item);
+                        item.fillers.forEach((filler) => {
+                            const value = fillers.find(
+                                (item) => filler === item
+                            );
                             value && finalFiltering.push(item);
-                        })
+                        });
                     }
-                })
+                });
                 primaryFiltering = Array.from(new Set(finalFiltering));
-            })
+            });
             state.renderProductsData = primaryFiltering;
         },
     },

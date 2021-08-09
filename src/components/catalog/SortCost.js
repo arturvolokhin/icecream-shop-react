@@ -4,8 +4,6 @@ const createSliderWithTooltip = Slider.createSliderWithTooltip;
 const Range = createSliderWithTooltip(Slider.Range);
 
 const SortCost = ({ cost, setCost }) => {
-    
-
     const handleChange = (value) => {
         setCost(value);
     };
