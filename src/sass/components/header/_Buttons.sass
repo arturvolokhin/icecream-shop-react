@@ -1,8 +1,8 @@
 .header
     &__buttons
         display: flex
-        justify-content: space-between
-        width: 270px
+        min-width: 270px
+        align-items: center
 
     &__search
         display: block
@@ -18,9 +18,16 @@
         &:hover
             background-color: #998686
 
+        &-active
+            padding: 0 10px
+            width: 200px
+            border-radius: 20px
+            color: #fff
+
     &__login
         @include button()
         position: relative
+        margin: 0 15px
         padding: 0 20px 0 0
         width: 93px
         height: 32px
@@ -42,7 +49,7 @@
             width: 20px
             height: 20px
             background: url(/images/icons/login.svg) no-repeat center
-   
+
     &__cart
         @include button()
         position: relative
