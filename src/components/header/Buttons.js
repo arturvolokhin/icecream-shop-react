@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { toggleCart } from "../../redux/cartSlice";
+import { startSearch, clearFoundProducts } from "../../redux/searchSlice";
 import Search from "./Search";
 
 const Buttons = () => {
@@ -26,12 +27,16 @@ const Buttons = () => {
     };
 
     const handleChange = ({ target }) => {
+        target.value.length > 3 && dispatch(startSearch(target.value));
         setSearchValue(target.value);
     };
 
     const handleBlur = () => {
-        setSearch(!search);
-        setSearchValue("");
+        if (!search) {
+            setSearch(!search);
+            setSearchValue("");
+            dispatch(clearFoundProducts);
+        }
     };
 
     return (
@@ -42,12 +47,13 @@ const Buttons = () => {
                         ? "header__search"
                         : "header__search header__search-active"
                 }
-                onClick={handleToggleSearch}
                 onBlur={handleBlur}
+                onClick={handleToggleSearch}
                 onChange={handleChange}
                 value={searchValue}
             />
-            <Search />
+            {search && <Search />}
+
             <button className="header__login">Вход</button>
             <button className="header__cart" onClick={handleToggleCart}>
                 {cost !== "0р" ? cost : "Пусто"}
