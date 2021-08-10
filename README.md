@@ -27,8 +27,7 @@
 - react-yandex-maps: "^4.6.0"
 - rc-slider: "^9.7.2",
 
-## Открываем приложение следующим образом:
-### git clone => git checkout dev => npm i => npm run start.
-### Клонируем репозиторий, переходим в ветку "dev", устанавливаем зависимости "npm i", запускам приложение командой "npm run start".
+# [Нажмите](https://arturvolokhin.github.io/icecream-shop-react/), чтобы открыть приложение.
+
 
 <img src="https://github.com/arturvolokhin/images/blob/main/scrinshots/icecream-shop.png"></img>
