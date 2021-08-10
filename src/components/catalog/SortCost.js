@@ -10,7 +10,7 @@ const SortCost = ({ cost, setCost }) => {
 
     return (
         <>
-            <fieldset className="sort__cost">
+            <fieldset className="sort__cost sort__field">
                 <legend className="sort__title">
                     Цена: {cost[0]} руб - {cost[1]} руб
                 </legend>

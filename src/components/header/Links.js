@@ -1,11 +1,11 @@
 import Logo from "../Logo";
 import { Link } from "react-router-dom";
 
-const Links = () => {
+const Links = ({ classLinks, classList }) => {
     return (
-        <div className="header__links">
+        <div className={classLinks ? "header__links " + classLinks : 'header__links'}>
             <Logo />
-            <ul className="header__list">
+            <ul className={classList ? "header__list " + classList : "header__list"}>
                 <Link to="/catalog" className="header__item-link">
                     <li className="header__item">
                         <p className="header__item-text">Каталог</p>

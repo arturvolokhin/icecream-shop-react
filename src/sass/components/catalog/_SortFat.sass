@@ -1,9 +1,12 @@
 .sort__fat
-    width: 440px
-    
+    width: 470px
+    flex-flow: row wrap
+    height: auto
+    justify-content: flex-start
+
     &-radio
         opacity: 0
-        
+
         &:checked+&-custom::after
             content: ''
             position: absolute
@@ -27,3 +30,4 @@
     &-label
         display: flex
         align-items: center
+        margin: 10px 10px 10px 0

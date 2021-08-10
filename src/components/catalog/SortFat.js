@@ -1,7 +1,7 @@
 const SortFat = ({ setFat }) => {
     return (
         <>
-            <fieldset className="sort__fat">
+            <fieldset className="sort__fat sort__field">
                 <legend className="sort__title">Жирность:</legend>
                 <label className="sort__fat-label">
                     <input

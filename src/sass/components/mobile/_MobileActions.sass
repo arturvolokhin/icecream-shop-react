@@ -1,0 +1,71 @@
+.mobile
+    &__actions
+        display: none
+        position: fixed
+        bottom: 20px
+        right: 20px
+        flex-direction: column
+        height: 220px
+        justify-content: space-between
+        z-index: 20
+
+    &__cart
+        display: block
+        width: 60px
+        height: 60px
+        border: none
+        border-radius: 50%
+        background: url(/images/icons/shopping-cart.svg) no-repeat center
+        background-color: #b2b2b2
+        cursor: pointer
+
+        &:hover
+            background-color: #998686
+
+    &__burger
+        position: relative
+        display: block
+        width: 60px
+        height: 60px
+        border: none
+        border-radius: 50%
+        background-color: #b2b2b2
+        background-repeat: no-repeat
+        background-position: top 55% right 9px
+        cursor: pointer
+
+        &:hover
+            background-color: #998686
+
+        &-button
+            position: absolute
+            top: calc(50% - 1px)
+            left: calc(50% - 9px)
+            border: none
+            background: #fff
+            height: 2px
+            width: 18px
+
+            &::after
+                content: ''
+                position: absolute
+                top: 7px
+                left: calc(50% - 9px)
+                width: 18px
+                height: 2px
+                background: #fff
+
+            &::before
+                content: ''
+                position: absolute
+                bottom: 7px
+                left: calc(50% - 9px)
+                width: 18px
+                height: 2px
+                background: #fff
+
+    &__search
+        width: 60px
+        height: 60px
+        background: url(/images/icons/search.svg) no-repeat center
+        background-color: #b2b2b2

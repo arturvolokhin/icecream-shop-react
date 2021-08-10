@@ -3,7 +3,7 @@ import SearchResult from "./SearchResult";
 import Close from "../Close";
 import { startSearch, clearFoundProducts } from "../../redux/searchSlice";
 
-const Search = ({ dispatch }) => {
+const Search = ({ dispatch, classes }) => {
     const [isSearchActive, setIsSearchActive] = useState(false);
     const [searchValue, setSearchValue] = useState("");
 
@@ -25,7 +25,13 @@ const Search = ({ dispatch }) => {
     return (
         <div className="search__wrapper">
             <input
-                className={!isSearchActive ? "search" : "search search-active"}
+                className={
+                    isSearchActive
+                        ? "search search-active"
+                        : classes
+                        ? "search mobile__search"
+                        : "search"
+                }
                 onClick={handleToggleSearch}
                 onChange={handleChange}
                 value={searchValue}

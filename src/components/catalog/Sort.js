@@ -32,7 +32,7 @@ const Sort = () => {
             <SortCost cost={cost} setCost={setCost} />
             <SortFat setFat={setFat} />
             <SortFillers fillers={fillers} setFillers={setFillers} />
-            <Button text={"Применить"} handleClick={handleClick} />
+            <Button text={"Применить"} classes="sort__button" handleClick={handleClick} />
         </form>
     );
 };

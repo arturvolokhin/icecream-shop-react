@@ -1,7 +1,7 @@
 const SortCategory = ({ category, setCategory }) => {
     return (
         <>
-            <fieldset className="sort__category">
+            <fieldset className="sort__category sort__field">
                 <legend className="sort__title">Сортировка:</legend>
                 <input
                     className="sort__category-value"

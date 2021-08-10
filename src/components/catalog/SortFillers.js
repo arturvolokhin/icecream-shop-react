@@ -23,7 +23,7 @@ const SortFillers = ({ fillers, setFillers }) => {
     };
 
     return (
-        <fieldset className="sort__fillers">
+        <fieldset className="sort__fillers sort__field">
             <legend className="sort__title">Наполнители:</legend>
             {data.map((item, index) => {
                 return (
