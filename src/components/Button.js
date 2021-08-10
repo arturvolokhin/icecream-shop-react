@@ -1,6 +1,9 @@
 const Button = ({ text, classes, handleClick }) => {
     return (
-        <button className={"button " + classes} onClick={handleClick}>
+        <button
+            className={classes ? "button " + classes : "button"}
+            onClick={handleClick}
+        >
             {text}
         </button>
     );

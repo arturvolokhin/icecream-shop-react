@@ -46,7 +46,7 @@ export const productsSlice = createSlice({
 
             let finalFiltering = [];
 
-            fillers.forEach((filler) => {
+            fillers.forEach(() => {
                 primaryFiltering.forEach((item) => {
                     if (!Array.isArray(item.fillers)) {
                         fillers.includes(item.fillers) &&

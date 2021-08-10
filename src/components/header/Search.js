@@ -1,22 +1,43 @@
-import { useSelector } from "react-redux";
-import SearchProduct from "./SearchProduct";
+import { useState } from "react";
+import SearchResult from "./SearchResult";
+import Close from "../Close";
+import { startSearch, clearFoundProducts } from "../../redux/searchSlice";
 
-const Search = () => {
-    const searchData = useSelector(({ search }) => search.foundProducts);
+const Search = ({ dispatch }) => {
+    const [isSearchActive, setIsSearchActive] = useState(false);
+    const [searchValue, setSearchValue] = useState("");
+
+    const handleToggleSearch = () => {
+        !isSearchActive && setIsSearchActive(!isSearchActive);
+    };
+
+    const handleChange = ({ target }) => {
+        target.value.length > 3 && dispatch(startSearch(target.value));
+        setSearchValue(target.value);
+    };
+
+    const clearSearchResult = () => {
+        setIsSearchActive(!isSearchActive);
+        setSearchValue("");
+        dispatch(clearFoundProducts());
+    };
 
     return (
-        <ul className="search">
-            {searchData.map((product, index) => {
-                return (
-                    <SearchProduct
-                        key={index}
-                        name={product.name}
-                        image={product.image}
-                        description={product.description}
-                    />
-                );
-            })}
-        </ul>
+        <div className="search__wrapper">
+            <input
+                className={!isSearchActive ? "search" : "search search-active"}
+                onClick={handleToggleSearch}
+                onChange={handleChange}
+                value={searchValue}
+            />
+            {isSearchActive && (
+                <Close
+                    classes="search__close"
+                    handleClick={clearSearchResult}
+                />
+            )}
+            {isSearchActive && <SearchResult />}
+        </div>
     );
 };
 

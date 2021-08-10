@@ -1,5 +1,10 @@
-const Close = ({ handleClick }) => {
-    return <div className="close" onClick={handleClick}></div>;
+const Close = ({ handleClick, classes }) => {
+    return (
+        <div
+            className={classes ? "close " + classes : "close"}
+            onClick={handleClick}
+        ></div>
+    );
 };
 
 export default Close;
