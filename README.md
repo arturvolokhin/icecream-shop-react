@@ -2,9 +2,10 @@
 
 * Приложение написано с помощью **React**.
 * Используется **БЭМ** и препроцессор **Sass**.
-* Для перехода по страницам используется **React-router**
-* Для взаимодействия с состоянием используется **Redux**
-* Для отображения карты используется **Yandex Maps Api**
+* Для перехода по страницам используется **React-router**.
+* Для взаимодействия с состоянием используется **Redux**.
+* Для отображения карты используется **Yandex Maps Api**.
+* **Адаптация** под мобильные устройства.
 
 ### *Функционал приложения*
    - Добавление продукта в корзину покупок.
@@ -25,9 +26,12 @@
 - @reduxjs/toolkit: "^1.6.1"
 - redux-persist: "^6.0.0"
 - react-yandex-maps: "^4.6.0"
-- rc-slider: "^9.7.2",
+- rc-slider: "^9.7.2"
+- gh-pages: "^3.2.3"
+
+## Элементы дизайна взяты у компании [HTML Academy](https://htmlacademy.ru/)
 
 # [Нажмите](https://arturvolokhin.github.io/icecream-shop-react/), чтобы открыть приложение.
 
 
-<img src="https://github.com/arturvolokhin/images/blob/main/scrinshots/icecream-shop.png"></img>
+<img src="https://github.com/arturvolokhin/images/blob/main/scrinshots/icecream-shop-react.png"></img>
