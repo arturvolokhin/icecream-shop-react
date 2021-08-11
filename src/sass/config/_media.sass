@@ -99,7 +99,7 @@
         padding: 20px 10px
 
     .location__info
-        display: none    
+        display: none
 
     .subscription
         &__form
@@ -172,9 +172,6 @@
 
         &__header
 
-            &-actions
-                width: 155px
-
             &-remove
                 font-size: 14px
 
@@ -199,7 +196,23 @@
             font-size: 24px
             padding: 15px 40px
 
-@media (max-width: 415px)
+    .notification
+        width: 100%
+
+        &__wrap
+            left: 50%
+            transform: translateX(-50%)
+            width: 90%
+
+    .cart
+        &__notification
+            font-size: 20px 
+
+        &__header-title
+            margin: 0 15px 0 0
+            font-size: 25px           
+
+@media (max-width: 440px)
 
     .sort
         &__cost
@@ -217,6 +230,20 @@
             font-size: 20px
             padding: 10px 30px
 
+    .notification
+        height: 150px
+
+        &__title
+            font-size: 20px
+
+    .cart
+        &__footer
+            padding: 10px 40px
+
+            &-ordering
+                justify-content: center
+                height: 80px
+
 @media (max-width: 350px)
 
     .products
@@ -225,7 +252,11 @@
 
         &__price
             top: 80px
-            font-size: 25px 
+            font-size: 25px
 
         &__description
-            font-size: 15px               
+            font-size: 15px
+
+    .notification
+        &__title
+            font-size: 20px

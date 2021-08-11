@@ -10,7 +10,7 @@ const CartHeader = ({ dispatch }) => {
                     className="cart__header-remove"
                     onClick={() => dispatch(removeAllProducts())}
                 >
-                    Очистить корзину
+                    Очистить
                 </button>
                 <Close handleClick={() => dispatch(toggleCart(false))}/>
             </div>
