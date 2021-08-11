@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/icecream-shop-react/static/css/main.fc49b780.chunk.css",
-    "main.js": "/icecream-shop-react/static/js/main.1550ce5a.chunk.js",
-    "main.js.map": "/icecream-shop-react/static/js/main.1550ce5a.chunk.js.map",
+    "main.css": "/icecream-shop-react/static/css/main.1945fe23.chunk.css",
+    "main.js": "/icecream-shop-react/static/js/main.6c82917c.chunk.js",
+    "main.js.map": "/icecream-shop-react/static/js/main.6c82917c.chunk.js.map",
     "runtime-main.js": "/icecream-shop-react/static/js/runtime-main.1bde4909.js",
     "runtime-main.js.map": "/icecream-shop-react/static/js/runtime-main.1bde4909.js.map",
     "static/css/2.4a35ef0a.chunk.css": "/icecream-shop-react/static/css/2.4a35ef0a.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.bcd8642c.chunk.js.map": "/icecream-shop-react/static/js/2.bcd8642c.chunk.js.map",
     "index.html": "/icecream-shop-react/index.html",
     "static/css/2.4a35ef0a.chunk.css.map": "/icecream-shop-react/static/css/2.4a35ef0a.chunk.css.map",
-    "static/css/main.fc49b780.chunk.css.map": "/icecream-shop-react/static/css/main.fc49b780.chunk.css.map",
+    "static/css/main.1945fe23.chunk.css.map": "/icecream-shop-react/static/css/main.1945fe23.chunk.css.map",
     "static/js/2.bcd8642c.chunk.js.LICENSE.txt": "/icecream-shop-react/static/js/2.bcd8642c.chunk.js.LICENSE.txt",
     "static/media/stylesheet.css": "/icecream-shop-react/static/media/Robotomedium.922cf15b.woff",
     "static/media/main.sass": "/icecream-shop-react/static/media/thermometer.42a223c3.svg",
@@ -37,7 +37,7 @@
     "static/js/runtime-main.1bde4909.js",
     "static/css/2.4a35ef0a.chunk.css",
     "static/js/2.bcd8642c.chunk.js",
-    "static/css/main.fc49b780.chunk.css",
-    "static/js/main.1550ce5a.chunk.js"
+    "static/css/main.1945fe23.chunk.css",
+    "static/js/main.6c82917c.chunk.js"
   ]
 }
