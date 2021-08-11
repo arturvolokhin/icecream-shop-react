@@ -1,13 +1,23 @@
 import Close from "../Close";
 import Links from "../header/Links";
-import SocialLink from '../SocialLinks'
+import SocialLink from "../SocialLinks";
 
-const MobileMenu = ({ setIsMenuActive }) => {
+const MobileMenu = ({ setIsMenuActive, isMenuActive }) => {
+
+    const handleClick = () => {
+        isMenuActive && setIsMenuActive(false);
+    }
+
     return (
         <section className="mobile__menu">
-            <Close handleClick={() => setIsMenuActive(false)} />
-            <Links classLinks={"mobile__links"} classList={"mobile__list"} />
-            <SocialLink classes="mobile__social"/>
+            <Close handleClick={handleClick} />
+            <Links
+                classLinks={"mobile__links"}
+                classList={"mobile__list"}
+                handleClick={handleClick}
+                isMenuActive={isMenuActive}
+            />
+            <SocialLink classes="mobile__social" />
         </section>
     );
 };

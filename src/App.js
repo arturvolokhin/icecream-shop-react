@@ -33,7 +33,12 @@ const App = () => {
             <Cart />
             {notification && <Notification />}
             <MobileActions setIsMenuActive={setIsMenuActive} />
-            {isMenuActive && <MobileMenu setIsMenuActive={setIsMenuActive}/>}
+            {isMenuActive && (
+                <MobileMenu
+                    setIsMenuActive={setIsMenuActive}
+                    isMenuActive={isMenuActive}
+                />
+            )}
             <Footer />
         </div>
     );
