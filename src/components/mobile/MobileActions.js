@@ -12,15 +12,15 @@ const MobileActions = ({ setIsMenuActive }) => {
     return (
         <div className="mobile__actions">
             <button
-                className="mobile__burger"
+                className="mobile__item mobile__burger"
                 onClick={() => setIsMenuActive(true)}
             ></button>
 
             <button
-                className="mobile__cart"
+                className="mobile__item mobile__cart"
                 onClick={handleToggleCart}
             ></button>
-            <Search dispatch={dispatch} classes="mobile__search" />
+            <Search dispatch={dispatch} classes="mobile__item mobile__search" />
         </div>
     );
 };

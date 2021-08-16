@@ -176,12 +176,12 @@
                 font-size: 14px
 
 @media (max-width: 500px)
-    .products__item
-        width: 150px
-
-    .products__price
-        top: 90px
-        font-size: 35px
+    .products
+        &__price
+            top: 135px
+            font-size: 35px
+        &__item
+            width: 185px
 
     .promo
 
@@ -212,7 +212,52 @@
             margin: 0 15px 0 0
             font-size: 25px
 
+    .description
+        &__title
+            font-size: 20px
+            font-weight: 700
+            line-height: 22px
+        &__item
+            margin: 15px 0 10px 44px
+            font-size: 14px
+
 @media (max-width: 440px)
+    .description
+        &__item
+            margin: 5px 0 10px 44px
+            font-size: 12px
+            line-height: 15px
+        &__title
+            margin: 0 0 20px 0
+            font-size: 15px
+            line-height: 18px
+
+    .subscription
+        &__text
+            font-size: 13px
+            line-height: 17px
+        &__form
+            margin: 15px 0 0 0
+        &__mail
+            margin: 0px 0 15px 0
+            padding: 10px 10px
+
+    .offer
+        &__item
+            &-title
+                font-size: 30px
+            &-description
+                margin: 15px 0 15px
+                font-size: 15px
+
+    .products
+        &__price
+            top: 105px
+            font-size: 25px
+        &__item
+            width: 140px
+        &__description
+            display: none
 
     .sort
         &__cost
@@ -273,3 +318,22 @@
     .notification
         &__title
             font-size: 20px
+
+    .description
+        &__item
+            margin: 5px 0 5px 45px
+            font-size: 11px
+            line-height: 12px
+        &__title
+            font-size: 13px
+            line-height: 14px
+
+    .mobile
+        &__actions
+            bottom: -20px
+        &__item
+            width: 50px
+            height: 50px
+        &__search
+            width: 50px
+            height: 50px            

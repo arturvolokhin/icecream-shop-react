@@ -12,21 +12,25 @@ const Cart = () => {
         active && (
             <div className="cart">
                 <CartHeader active={active} dispatch={dispatch} />
-                {cartProductsData.length !== 0
-                    ? cartProductsData.map((product, index) => {
-                          return (
-                              <CartItem
-                                  key={index}
-                                  image={product.image}
-                                  description={product.description}
-                                  price={product.price}
-                                  quantity={product.quantity}
-                                  name={product.name}
-                                  dispatch={dispatch}
-                              />
-                          );
-                      })
-                    : <p className="cart__notification">В корзине нет продуктов</p>}
+                {cartProductsData.length !== 0 ? (
+                    cartProductsData.map((product, index) => {
+                        return (
+                            <CartItem
+                                key={index}
+                                image={product.image}
+                                description={product.description}
+                                price={product.price}
+                                quantity={product.quantity}
+                                name={product.name}
+                                dispatch={dispatch}
+                            />
+                        );
+                    })
+                ) : (
+                    <p className="cart__notification">
+                        В корзине нет продуктов
+                    </p>
+                )}
                 <CartFooter />
             </div>
         )

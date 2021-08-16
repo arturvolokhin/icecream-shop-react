@@ -3,13 +3,13 @@ import Links from "../header/Links";
 import SocialLink from "../SocialLinks";
 
 const MobileMenu = ({ setIsMenuActive, isMenuActive }) => {
-
+    
     const handleClick = () => {
         isMenuActive && setIsMenuActive(false);
-    }
+    };   
 
     return (
-        <section className="mobile__menu">
+        <section className={isMenuActive ? "mobile__menu active" : "mobile__menu"}>
             <Close handleClick={handleClick} />
             <Links
                 classLinks={"mobile__links"}

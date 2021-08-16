@@ -9,36 +9,35 @@
         justify-content: space-between
         z-index: 20
 
-    &__cart
-        display: block
+    &__item
         width: 60px
         height: 60px
         border: none
         border-radius: 50%
+        cursor: pointer
+
+    &__cart
+        display: block
         background: url(/images/icons/header/shopping-cart.svg) no-repeat center
         background-color: #b2b2b2
         cursor: pointer
-
         &:hover
             background-color: #998686
 
     &__burger
         position: relative
         display: block
-        width: 60px
-        height: 60px
-        border: none
-        border-radius: 50%
         background: url(/images/icons/mobile/burger-menu.svg) no-repeat center
         background-color: #b2b2b2
-        cursor: pointer
-
         &:hover
             background-color: #998686
 
     &__search
-        padding: 0
         width: 60px
         height: 60px
+        border: none
+        border-radius: 50%
+        cursor: pointer
+        padding: 0
         background: url(/images/icons/header/search.svg) no-repeat center
         background-color: #b2b2b2
