@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/icecream-shop-react/static/css/main.fdd0b8ef.chunk.css",
-    "main.js": "/icecream-shop-react/static/js/main.9bd92caf.chunk.js",
-    "main.js.map": "/icecream-shop-react/static/js/main.9bd92caf.chunk.js.map",
+    "main.css": "/icecream-shop-react/static/css/main.f2d31e02.chunk.css",
+    "main.js": "/icecream-shop-react/static/js/main.32bf440e.chunk.js",
+    "main.js.map": "/icecream-shop-react/static/js/main.32bf440e.chunk.js.map",
     "runtime-main.js": "/icecream-shop-react/static/js/runtime-main.1bde4909.js",
     "runtime-main.js.map": "/icecream-shop-react/static/js/runtime-main.1bde4909.js.map",
     "static/css/2.4a35ef0a.chunk.css": "/icecream-shop-react/static/css/2.4a35ef0a.chunk.css",
-    "static/js/2.5c8c6a6f.chunk.js": "/icecream-shop-react/static/js/2.5c8c6a6f.chunk.js",
-    "static/js/2.5c8c6a6f.chunk.js.map": "/icecream-shop-react/static/js/2.5c8c6a6f.chunk.js.map",
+    "static/js/2.ae37ea45.chunk.js": "/icecream-shop-react/static/js/2.ae37ea45.chunk.js",
+    "static/js/2.ae37ea45.chunk.js.map": "/icecream-shop-react/static/js/2.ae37ea45.chunk.js.map",
     "index.html": "/icecream-shop-react/index.html",
     "static/css/2.4a35ef0a.chunk.css.map": "/icecream-shop-react/static/css/2.4a35ef0a.chunk.css.map",
-    "static/css/main.fdd0b8ef.chunk.css.map": "/icecream-shop-react/static/css/main.fdd0b8ef.chunk.css.map",
-    "static/js/2.5c8c6a6f.chunk.js.LICENSE.txt": "/icecream-shop-react/static/js/2.5c8c6a6f.chunk.js.LICENSE.txt",
+    "static/css/main.f2d31e02.chunk.css.map": "/icecream-shop-react/static/css/main.f2d31e02.chunk.css.map",
+    "static/js/2.ae37ea45.chunk.js.LICENSE.txt": "/icecream-shop-react/static/js/2.ae37ea45.chunk.js.LICENSE.txt",
     "static/media/stylesheet.css": "/icecream-shop-react/static/media/Robotomedium.922cf15b.woff",
     "static/media/main.sass": "/icecream-shop-react/static/media/thermometer.42a223c3.svg",
     "static/media/blueberry.991b46ab.png": "/icecream-shop-react/static/media/blueberry.991b46ab.png",
@@ -37,8 +37,8 @@
   "entrypoints": [
     "static/js/runtime-main.1bde4909.js",
     "static/css/2.4a35ef0a.chunk.css",
-    "static/js/2.5c8c6a6f.chunk.js",
-    "static/css/main.fdd0b8ef.chunk.css",
-    "static/js/main.9bd92caf.chunk.js"
+    "static/js/2.ae37ea45.chunk.js",
+    "static/css/main.f2d31e02.chunk.css",
+    "static/js/main.32bf440e.chunk.js"
   ]
 }
