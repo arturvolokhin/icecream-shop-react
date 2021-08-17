@@ -34,7 +34,7 @@ const App = () => {
 
     return (
         <>
-            {!load || !time && <Preloader /> }
+            {!load || !time ? <Preloader /> :
             <div className="wrapper">
                 <Header />
                 <Switch>
@@ -53,7 +53,7 @@ const App = () => {
                     isMenuActive={isMenuActive}
                 />
                 <Footer />
-            </div>
+            </div>}
         </>
     );
 };
