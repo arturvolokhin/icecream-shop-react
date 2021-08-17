@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useSelector } from "react-redux";
 import { Switch, Route } from "react-router-dom";
 import "./fonts/roboto/stylesheet.css";
 import "./sass/main.sass";
@@ -8,7 +9,6 @@ import Footer from "./components/footer/Footer";
 import Catalog from "./components/catalog/Catalog";
 import Cart from "./components/cart/Cart";
 import Notification from "./components/Notification";
-import { useSelector } from "react-redux";
 import MobileActions from "./components/mobile/MobileActions";
 import MobileMenu from "./components/mobile/MobileMenu";
 import Preloader from "./components/Preloader";
