@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/icecream-shop-react/static/css/main.f8153165.chunk.css",
-    "main.js": "/icecream-shop-react/static/js/main.7b193526.chunk.js",
-    "main.js.map": "/icecream-shop-react/static/js/main.7b193526.chunk.js.map",
+    "main.css": "/icecream-shop-react/static/css/main.fdd0b8ef.chunk.css",
+    "main.js": "/icecream-shop-react/static/js/main.9bd92caf.chunk.js",
+    "main.js.map": "/icecream-shop-react/static/js/main.9bd92caf.chunk.js.map",
     "runtime-main.js": "/icecream-shop-react/static/js/runtime-main.1bde4909.js",
     "runtime-main.js.map": "/icecream-shop-react/static/js/runtime-main.1bde4909.js.map",
     "static/css/2.4a35ef0a.chunk.css": "/icecream-shop-react/static/css/2.4a35ef0a.chunk.css",
-    "static/js/2.bcd8642c.chunk.js": "/icecream-shop-react/static/js/2.bcd8642c.chunk.js",
-    "static/js/2.bcd8642c.chunk.js.map": "/icecream-shop-react/static/js/2.bcd8642c.chunk.js.map",
+    "static/js/2.5c8c6a6f.chunk.js": "/icecream-shop-react/static/js/2.5c8c6a6f.chunk.js",
+    "static/js/2.5c8c6a6f.chunk.js.map": "/icecream-shop-react/static/js/2.5c8c6a6f.chunk.js.map",
     "index.html": "/icecream-shop-react/index.html",
     "static/css/2.4a35ef0a.chunk.css.map": "/icecream-shop-react/static/css/2.4a35ef0a.chunk.css.map",
-    "static/css/main.f8153165.chunk.css.map": "/icecream-shop-react/static/css/main.f8153165.chunk.css.map",
-    "static/js/2.bcd8642c.chunk.js.LICENSE.txt": "/icecream-shop-react/static/js/2.bcd8642c.chunk.js.LICENSE.txt",
+    "static/css/main.fdd0b8ef.chunk.css.map": "/icecream-shop-react/static/css/main.fdd0b8ef.chunk.css.map",
+    "static/js/2.5c8c6a6f.chunk.js.LICENSE.txt": "/icecream-shop-react/static/js/2.5c8c6a6f.chunk.js.LICENSE.txt",
     "static/media/stylesheet.css": "/icecream-shop-react/static/media/Robotomedium.922cf15b.woff",
     "static/media/main.sass": "/icecream-shop-react/static/media/thermometer.42a223c3.svg",
     "static/media/blueberry.991b46ab.png": "/icecream-shop-react/static/media/blueberry.991b46ab.png",
@@ -27,6 +27,7 @@
     "static/media/menthol.7de21f37.png": "/icecream-shop-react/static/media/menthol.7de21f37.png",
     "static/media/mint-syrup.1c79069d.png": "/icecream-shop-react/static/media/mint-syrup.1c79069d.png",
     "static/media/orange.cc21538f.png": "/icecream-shop-react/static/media/orange.cc21538f.png",
+    "static/media/preloader.e6396a88.gif": "/icecream-shop-react/static/media/preloader.e6396a88.gif",
     "static/media/promo.31140f3e.png": "/icecream-shop-react/static/media/promo.31140f3e.png",
     "static/media/strawberry.b3b88e20.png": "/icecream-shop-react/static/media/strawberry.b3b88e20.png",
     "static/media/twitter.aa7096db.svg": "/icecream-shop-react/static/media/twitter.aa7096db.svg",
@@ -36,8 +37,8 @@
   "entrypoints": [
     "static/js/runtime-main.1bde4909.js",
     "static/css/2.4a35ef0a.chunk.css",
-    "static/js/2.bcd8642c.chunk.js",
-    "static/css/main.f8153165.chunk.css",
-    "static/js/main.7b193526.chunk.js"
+    "static/js/2.5c8c6a6f.chunk.js",
+    "static/css/main.fdd0b8ef.chunk.css",
+    "static/js/main.9bd92caf.chunk.js"
   ]
 }
